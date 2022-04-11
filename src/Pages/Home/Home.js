@@ -1,23 +1,28 @@
 import React from "react";
+import Instagram from "../../Components/Instagram/Instagram";
+import News from "../../Components/News/News";
+import Products from "../../Components/Products/Products";
+import Testimonials from "../../Components/Testimonials/Testimonials";
 
 const Home = () => {
   return (
-    <header className="bg-white">
-      <nav>
-        <div className="container px-6 py-3 mx-auto lg:flex lg:justify-between lg:items-center">
-          <div className="flex items-center justify-between">
-            <div>
-              {/* <a
+    <div>
+      <header className="bg-white">
+        <nav>
+          <div className="container px-6 py-3 mx-auto lg:flex lg:justify-between lg:items-center">
+            <div className="flex items-center justify-between">
+              <div>
+                {/* <a
                 className="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-blue-600  dark:hover:text-gray-300"
                 href="#"
               >
                 Brand
               </a> */}
-            </div>
+              </div>
 
-            {/* <!-- Mobile menu button --> */}
-            <div className="flex lg:hidden">
-              {/* <button
+              {/* <!-- Mobile menu button --> */}
+              <div className="flex lg:hidden">
+                {/* <button
                 type="button"
                 className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
                 aria-label="toggle menu"
@@ -29,13 +34,13 @@ const Home = () => {
                   ></path>
                 </svg>
               </button> */}
+              </div>
             </div>
-          </div>
 
-          {/* <!-- Mobile Menu open: "block", Menu closed: "hidden" --> */}
-          <div className="items-center lg:flex">
-            <div className="flex flex-col lg:flex-row lg:mx-6">
-              {/* <a
+            {/* <!-- Mobile Menu open: "block", Menu closed: "hidden" --> */}
+            <div className="items-center lg:flex">
+              <div className="flex flex-col lg:flex-row lg:mx-6">
+                {/* <a
                 className="my-1 text-sm font-medium text-blue-600   hover:text-blue-500 lg:mx-4 lg:my-0"
                 href="#"
               >
@@ -59,9 +64,9 @@ const Home = () => {
               >
                 About
               </a> */}
-            </div>
+              </div>
 
-            {/* <div className="flex justify-center lg:block">
+              {/* <div className="flex justify-center lg:block">
                 <a
                   className="relative text-blue-600  dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-300"
                   href="#"
@@ -84,41 +89,46 @@ const Home = () => {
                   <span className="absolute top-0 left-0 p-1 text-xs text-white bg-blue-500 rounded-full"></span>
                 </a>
               </div> */}
-          </div>
-        </div>
-      </nav>
-
-      <div className="container px-6 py-16 mx-auto">
-        <div className="items-center lg:flex">
-          <div className="w-full lg:w-1/2">
-            <div className="lg:max-w-lg">
-              <p className="my-5 mx-9 text-left text-2xl text-orange-600 font-semibold">
-                We are Anirban
-              </p>
-              <h1 className="text-2xl font-semibold text-blue-600 uppercase  lg:text-3xl">
-                Find the Best Fit and Style for your eyes in our store
-              </h1>
-              <p className="mt-2 text-gray-600 dark:text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
-                beatae error laborum ab amet sunt recusandae? Reiciendis natus
-                perspiciatis optio.
-              </p>
-              <button className="w-full px-3 py-2 mt-6 text-xs font-medium text-white uppercase transition-colors duration-200 transform bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
-                Shop Now
-              </button>
             </div>
           </div>
+        </nav>
 
-          <div className="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
-            <img
-              className="w-full h-full lg:max-w-2xl"
-              src="https://i.ibb.co/yyxxsS6/beautiful-young-cheerful-girl-hat-sunglasses-rests-morning-beach-176420-5853.webp"
-              alt="Sunglass with women"
-            />
+        <div className="container px-6 py-16 mx-auto">
+          <div className="items-center lg:flex">
+            <div className="w-full lg:w-1/2">
+              <div className="lg:max-w-lg">
+                <p className="my-5 mx-9 text-left text-2xl text-orange-500 font-semibold">
+                  We are Airban
+                </p>
+                <h1 className="text-2xl font-semibold text-blue-800 uppercase  lg:text-3xl">
+                  Find the Best Fit and Style for your eyes in our store
+                </h1>
+                <p className="mt-2 text-gray-600 dark:text-gray-400">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Porro beatae error laborum ab amet sunt recusandae? Reiciendis
+                  natus perspiciatis optio.
+                </p>
+                <button className="w-full px-3 py-2 mt-6 text-xs font-medium text-white uppercase transition-colors duration-200 transform bg-blue-800 rounded-md lg:w-auto hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
+                  Shop Now
+                </button>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
+              <img
+                className="w-full h-full lg:max-w-2xl"
+                src="https://i.ibb.co/yyxxsS6/beautiful-young-cheerful-girl-hat-sunglasses-rests-morning-beach-176420-5853.webp"
+                alt="Sunglass with women"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
+      <Products></Products>
+      <Testimonials></Testimonials>
+      <Instagram></Instagram>
+      <News></News>
+    </div>
   );
 };
 

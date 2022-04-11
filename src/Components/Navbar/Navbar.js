@@ -61,9 +61,9 @@ const Navbar = () => {
                     ? "text-green-600 font-bold border-b-2 border-green-600"
                     : ""
                 }
-                to="/about"
+                to="/aboutus"
               >
-                <h1>About</h1>
+                <h1>About Us</h1>
               </NavLink>
               <NavLink
                 className={(info) =>
@@ -99,9 +99,11 @@ const Navbar = () => {
 
             <div>
               <div className="flex gap-x-2">
-                <button className="font-semibold px-6 py-2 rounded-full border-2 border-green-600 hover:bg-green-700 hover:text-white focus:ring-4 ring-green-200 ring-offset-1 transition duration-500">
-                  Sign In
-                </button>
+                <Link to="/login">
+                  <button className="font-semibold px-6 py-2 rounded-full border-2 border-green-600 hover:bg-green-700 hover:text-white focus:ring-4 ring-green-200 ring-offset-1 transition duration-500">
+                    Log In
+                  </button>
+                </Link>
 
                 {/*============ extra button ============*/}
 

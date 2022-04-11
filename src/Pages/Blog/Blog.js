@@ -4,7 +4,7 @@ const Blog = () => {
     return (
       <div id="blog" className="bg-gray-100 px-4 xl:px-0 py-12">
         <div className="mx-auto container">
-          <h1 className="text-center text-3xl lg:text-5xl tracking-wider text-gray-900">
+          <h1 className="text-center text-3xl lg:text-5xl tracking-wider text-orange-500">
             Latest from our Blog
           </h1>
           <div className="mt-12 lg:mt-24">
@@ -12,10 +12,10 @@ const Blog = () => {
               <div>
                 <img
                   className="w-full"
-                  src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(1).png"
-                  alt="computer"
+                  src="https://i.ibb.co/ZXm5NQz/young-teen-woman-sunglasses-hat-holding-shopping-bags-her-hands-feeling-so-happiness-isolated-green.webp"
+                  alt=""
                 />
-                <div className="py-4 px-8 w-full flex justify-between bg-indigo-700">
+                <div className="py-4 px-8 w-full flex justify-between bg-blue-800">
                   <p className="text-sm text-white font-semibold tracking-wide">
                     Bruce Wayne
                   </p>
@@ -24,7 +24,7 @@ const Blog = () => {
                   </p>
                 </div>
                 <div className="bg-white px-10 py-6 rounded-bl-3xl rounded-br-3xl">
-                  <h1 className="text-4xl text-gray-900 font-semibold tracking-wider">
+                  <h1 className="text-4xl text-orange-500 font-semibold tracking-wider">
                     Transactions
                   </h1>
                   <p className="text-gray-700 text-base lg:text-lg  lg:leading-8 tracking-wide mt-6 w-11/12">
@@ -38,7 +38,7 @@ const Blog = () => {
                     event.
                   </p>
                   <div className="w-full mt-4 justify-end flex items-center cursor-pointer">
-                    <p className="text-base tracking-wide text-indigo-500">
+                    <p className="text-base tracking-wide text-blue-800">
                       Read more
                     </p>
                     <svg
@@ -73,10 +73,10 @@ const Blog = () => {
                   <div>
                     <img
                       className="w-full"
-                      src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(2).png"
+                      src="https://i.ibb.co/HFcfSjy/portrait-cheerful-fashion-hipster-girl-sunglasses-casual-clothes-isolated-231208-5747.jpg"
                       alt="games"
                     />
-                    <div className="py-2 px-4 w-full flex justify-between bg-indigo-700">
+                    <div className="py-2 px-4 w-full flex justify-between bg-blue-800">
                       <p className="text-sm text-white font-semibold tracking-wide">
                         Bruce Wayne
                       </p>
@@ -85,7 +85,7 @@ const Blog = () => {
                       </p>
                     </div>
                     <div className="bg-white px-3  lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl">
-                      <h1 className="text-lg text-gray-900 font-semibold tracking-wider">
+                      <h1 className="text-lg text-orange-500 font-semibold tracking-wider">
                         Transactions
                       </h1>
                       <p className="text-gray-700 text-sm  lg:text-base  lg:leading-8 pr-4 tracking-wide mt-2">
@@ -97,10 +97,10 @@ const Blog = () => {
                   <div>
                     <img
                       className="w-full"
-                      src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(3).png"
+                      src="https://i.ibb.co/WymKBmQ/studio-view-cheerful-woman-with-toothy-smile-wears-trendy-sunglasses-straw-hat-summer-dress-isolated.jpg"
                       alt="notes"
                     />
-                    <div className="py-2 px-4 w-full flex justify-between bg-indigo-700">
+                    <div className="py-2 px-4 w-full flex justify-between bg-blue-800">
                       <p className="text-sm text-white font-semibold tracking-wide">
                         Bruce Wayne
                       </p>
@@ -109,7 +109,7 @@ const Blog = () => {
                       </p>
                     </div>
                     <div className="bg-white px-3  lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl">
-                      <h1 className="text-lg text-gray-900 font-semibold tracking-wider">
+                      <h1 className="text-lg text-orange-500 font-semibold tracking-wider">
                         Transactions
                       </h1>
                       <p className="text-gray-700 text-sm  lg:text-base  lg:leading-8 pr-4 tracking-wide mt-2">
@@ -123,10 +123,10 @@ const Blog = () => {
                   <div>
                     <img
                       className="w-full"
-                      src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(4).png"
+                      src="https://i.ibb.co/B2Dfcpc/handsome-bearded-stylish-man-jumping-running-isolated-dressed-sweatshirt-with-travel-bag-wearing-jea.webp"
                       alt="laptop"
                     />
-                    <div className="py-2 px-4 w-full flex justify-between bg-indigo-700">
+                    <div className="py-2 px-4 w-full flex justify-between bg-blue-800">
                       <p className="text-sm text-white font-semibold tracking-wide">
                         Bruce Wayne
                       </p>
@@ -135,7 +135,7 @@ const Blog = () => {
                       </p>
                     </div>
                     <div className="bg-white px-3  lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl">
-                      <h1 className="text-lg text-gray-900 font-semibold tracking-wider">
+                      <h1 className="text-lg text-orange-500 font-semibold tracking-wider">
                         Transactions
                       </h1>
                       <p className="text-gray-700 text-sm  lg:text-base  lg:leading-8 pr-4 tracking-wide mt-2">
@@ -147,10 +147,10 @@ const Blog = () => {
                   <div>
                     <img
                       className="w-full"
-                      src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(5).png"
+                      src="https://i.ibb.co/DWtb6qP/happy-couple-laughing-traveling-summer-by-sea-man-woman-wearing-sunglasses-285396-725.webp"
                       alt="worker"
                     />
-                    <div className="py-2 px-4 w-full flex justify-between bg-indigo-700">
+                    <div className="py-2 px-4 w-full flex justify-between bg-blue-800">
                       <p className="text-sm text-white font-semibold tracking-wide">
                         Bruce Wayne
                       </p>
@@ -159,7 +159,7 @@ const Blog = () => {
                       </p>
                     </div>
                     <div className="bg-white px-3  lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl">
-                      <h1 className="text-lg text-gray-900 font-semibold tracking-wider">
+                      <h1 className="text-lg text-orange-500 font-semibold tracking-wider">
                         Transactions
                       </h1>
                       <p className="text-gray-700 text-sm  lg:text-base  lg:leading-8 pr-4 tracking-wide mt-2">
