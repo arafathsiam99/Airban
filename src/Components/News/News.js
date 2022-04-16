@@ -3,7 +3,11 @@ import React from "react";
 const News = () => {
   return (
     <section className="px-5 py-10 dark:bg-coolGray-800 dark:text-coolGray-100">
-      <div className="container grid grid-cols-12 mx-auto gap-y-6 md:gap-10">
+      <h2 className="text-3xl text-blue-800 font-semibold ">Latest News</h2>
+      <p className=" text-orange-500 font-medium ">
+        Look over the news section to get the latest news of our product
+      </p>
+      <div className="my-5 container grid grid-cols-12 mx-auto gap-y-6 md:gap-10">
         <div className="flex flex-col justify-between col-span-12 py-2 space-y-8 md:space-y-16 md:col-span-3">
           <div className="flex flex-col space-y-8 md:space-y-12">
             <div className="flex flex-col space-y-2">

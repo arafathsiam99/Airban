@@ -2,6 +2,7 @@ import React from "react";
 import Instagram from "../../Components/Instagram/Instagram";
 import News from "../../Components/News/News";
 import Products from "../../Components/Products/Products";
+import Stats from "../../Components/Stats/Stats";
 import Testimonials from "../../Components/Testimonials/Testimonials";
 
 const Home = () => {
@@ -128,6 +129,7 @@ const Home = () => {
       <Testimonials></Testimonials>
       <Instagram></Instagram>
       <News></News>
+      <Stats></Stats>
     </div>
   );
 };

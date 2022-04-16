@@ -11,7 +11,7 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 
 const Testimonials = () => {
     return (
-      <div>
+      <div className='my-10'>
         <div className="flex items-center justify-between h-full w-full absolute z-0">
           <div className="w-1/3 bg-white h-full" />
           <div className="w-4/6 ml-16 bg-gray-100 h-full" />
@@ -22,12 +22,12 @@ const Testimonials = () => {
             isIntrinsicHeight={true}
             totalSlides={2}
           >
-            <h1 className="text-5xl font-bold xl:block hidden leading-tight text-gray-800">
+            <h1 className="text-5xl font-bold xl:block hidden leading-tight text-blue-800">
               What our customers are
               <br />
               saying
             </h1>
-            <h1 className="text-5xl font-bold xl:hidden block leading-tight lg:leading-10 text-gray-800">
+            <h1 className="text-5xl font-bold xl:hidden block leading-tight lg:leading-10 text-blue-800">
               What our customers are saying
             </h1>
             <Slider>
@@ -49,10 +49,10 @@ const Testimonials = () => {
                     </div>
                     <div className="md:w-1/3 lg:w-1/3 xl:ml-32 md:ml-20 md:mt-0 mt-4 flex flex-col justify-between">
                       <div>
-                        <h1 className="text-2xl font-semibold xl:leading-loose text-gray-800">
+                        <h1 className="text-2xl font-semibold xl:leading-loose text-orange-500">
                           Some of the best work that was done!
                         </h1>
-                        <p className="text-base font-medium leading-6 mt-4 text-gray-600">
+                        <p className="text-base font-medium leading-6 mt-4 text-gray-400">
                           Our core values are at the heart of all that we do.
                           They are integrated into our daily work lives and help
                           us to remember our customers always comes first, the
@@ -60,10 +60,10 @@ const Testimonials = () => {
                         </p>
                       </div>
                       <div className="md:mt-0 mt-8">
-                        <p className="text-base font-medium leading-4 text-gray-800">
+                        <p className="text-base font-medium leading-4 text-blue-800">
                           Anna Smith
                         </p>
-                        <p className="text-base leading-4 mt-2 mb-4 text-gray-600">
+                        <p className="text-base leading-4 mt-2 mb-4 text-orange-500">
                           Senior Web Designer
                         </p>
                       </div>
@@ -92,7 +92,7 @@ const Testimonials = () => {
                     </div>
                     <div className="md:w-1/3 lg:w-1/3 xl:ml-32 md:ml-20 md:mt-0 mt-4 flex flex-col justify-between">
                       <div>
-                        <h1 className="text-2xl font-semibold xl:leading-loose text-gray-800">
+                        <h1 className="text-2xl font-semibold xl:leading-loose text-orange-500">
                           Some of the best work that was done!
                         </h1>
                         <p className="text-base font-medium leading-6 mt-4 text-gray-600">
@@ -103,10 +103,10 @@ const Testimonials = () => {
                         </p>
                       </div>
                       <div className="md:mt-0 mt-8">
-                        <p className="text-base font-medium leading-4 text-gray-800">
+                        <p className="text-base font-medium leading-4 text-blue-800">
                           Anna Smith
                         </p>
-                        <p className="text-base leading-4 mt-2 mb-4 text-gray-600">
+                        <p className="text-base leading-4 mt-2 mb-4 text-orange-500">
                           Senior Web Designer
                         </p>
                       </div>
