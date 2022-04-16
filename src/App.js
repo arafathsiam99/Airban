@@ -76,7 +76,7 @@ function App() {
           <PrivateRoute exact path="/addreview">
             <AddReview></AddReview>
           </PrivateRoute>
-          <PrivateRoute  path="/dashboard">
+          <PrivateRoute path="/dashboard">
             <DashBoard></DashBoard>
           </PrivateRoute>
           <PrivateRoute exact path="/booking/:id">
