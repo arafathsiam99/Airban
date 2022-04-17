@@ -16,11 +16,13 @@ import AboutUs from "./Pages/AboutUs/AboutUs";
 import AddProduct from "./Pages/AddProduct/AddProduct";
 import AddReview from "./Pages/AddReview/AddReview";
 import Blog from "./Pages/Blog/Blog";
+import Contact from "./Pages/Contact/Contact";
 import Feature from "./Pages/Feature/Feature";
 import Footer from "./Pages/Footer/Footer";
 import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
 import ManageAllOrders from "./Pages/ManageAllOrders/ManageAllOrders";
+import ManageProducts from "./Pages/ManageProducts/ManageProducts";
 import MoreSunglasses from "./Pages/MoreSunglasses/MoreSunglasses";
 import MyOrders from "./Pages/MyOrders/MyOrders";
 import Register from "./Pages/Register/Register";
@@ -62,6 +64,9 @@ function App() {
           <Route exact path="/feature">
             <Feature></Feature>
           </Route>
+          <Route exact path="/contact">
+            <Contact></Contact>
+          </Route>
           <Route exact path="/stats">
             <Stats></Stats>
           </Route>
@@ -92,11 +97,11 @@ function App() {
           <Route exact path="/addproduct">
             <AddProduct></AddProduct>
           </Route>
-          <Route exact path="/manageallorders">
-            <ManageAllOrders></ManageAllOrders>
-          </Route>
           <Route exact path="/moresunglasses">
             <MoreSunglasses></MoreSunglasses>
+          </Route>
+          <Route exact path="/manageproducts">
+            <ManageProducts></ManageProducts>
           </Route>
         </Switch>
         <Footer></Footer>

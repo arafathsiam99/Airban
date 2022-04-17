@@ -5,7 +5,7 @@ const Feature = () => {
       <section class="bg-white dark:bg-gray-600">
         <div class="container px-6 py-10 mx-auto">
           <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">
-            explore our <br /> awesome Components
+            explore our <br /> awesome features
           </h1>
 
           <div class="mt-2">
@@ -35,7 +35,7 @@ const Feature = () => {
                 </span>
 
                 <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">
-                  New Components
+                  New Sunglasses
                 </h1>
 
                 <p class="text-gray-500 dark:text-gray-300">
@@ -70,7 +70,7 @@ const Feature = () => {
                 </span>
 
                 <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">
-                  elegant Dark Mode
+                  elegant color
                 </h1>
 
                 <p class="text-gray-500 dark:text-gray-300">

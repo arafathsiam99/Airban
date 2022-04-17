@@ -176,6 +176,7 @@ const Navbar = () => {
                     Logout
                   </button>
                 )}
+                {user.email &&  <p className="text-blue-800"> {user.email}</p>}
 
                 {/*============ extra button ============*/}
 

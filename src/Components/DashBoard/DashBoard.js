@@ -14,6 +14,7 @@ import MakeAdmin from "../MakeAdmin/MakeAdmin";
 import AddReview from "../../Pages/AddReview/AddReview";
 import ManageAllOrders from "../../Pages/ManageAllOrders/ManageAllOrders";
 import MyOrders from "../../Pages/MyOrders/MyOrders";
+import ManageProducts from "../../Pages/ManageProducts/ManageProducts";
 
 const DashBoard = () => {
   const { admin, logout } = useFirebase();
@@ -62,11 +63,11 @@ const DashBoard = () => {
               </button>
             </Link>
             <br />
-            {/* <Link to={`${url}/managesunglasses`}>
+            <Link to={`${url}/manageproducts`}>
                 <button className="focus:outline-none text-black bg-blue-800 hover:bg-blue-700 focus:ring-4 focus:ring-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 text-white">
-                  Manage Sunglasses
+                  Manage Products
                 </button>
-              </Link> */}
+              </Link>
           </div>
         )}
         <button
@@ -90,9 +91,9 @@ const DashBoard = () => {
         <AdminRoute path={`${path}/manageallorders`}>
           <ManageAllOrders></ManageAllOrders>
         </AdminRoute>
-        {/* <AdminRoute path={`${path}/managecars`}>
-            <ManageCars></ManageCars>
-          </AdminRoute> */}
+        <AdminRoute path={`${path}/manageproducts`}>
+            <ManageProducts></ManageProducts>
+          </AdminRoute>
         <Route path={`${path}/myorders`}>
           <MyOrders></MyOrders>
         </Route>
