@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import useFirebase from "../Hooks/useFirebase";
 
 const MakeAdmin = () => {
-  const {admin}= useFirebase();
+  const { admin } = useFirebase();
   const [email, setEmail] = useState("");
   const [success, setSuccess] = useState(false);
   const handleOnBlur = (e) => {
@@ -10,7 +10,7 @@ const MakeAdmin = () => {
   };
   const handleAdminSubmit = (e) => {
     const user = { email };
-    fetch("http://localhost:8000/users/admin", {
+    fetch("https://intense-gorge-71583.herokuapp.com/users/admin", {
       method: "PUT",
       headers: {
         "content-type": "application/json",

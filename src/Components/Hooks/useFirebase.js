@@ -72,44 +72,43 @@ const useFirebase = () => {
       });
   };
 
-   useEffect(() => {
-     const unsubscribed = onAuthStateChanged(auth, (user) => {
-       if (user) {
-         setUser(user);
-       } else {
-         setUser({});
-       }
-       setIsLoading(false);
-     });
-     return () => unsubscribed;
-   }, []);
+  useEffect(() => {
+    const unsubscribed = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser(user);
+      } else {
+        setUser({});
+      }
+      setIsLoading(false);
+    });
+    return () => unsubscribed;
+  }, []);
 
+  const login = (email, password, history, location) => {
+    setIsLoading(true);
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in
+        const user = userCredential.user;
+        // ...
+        setUser(user);
+        console.log(user);
 
-    const login = (email, password, history, location) => {
-      setIsLoading(true);
-      signInWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
-          // Signed in
-          const user = userCredential.user;
-          // ...
-          setUser(user);
-          console.log(user);
-
-          alert("Login Successfull");
-          const destination = location?.state?.from || "/";
-          history.push(destination);
-        })
-        .catch((error) => {
-          setAuthError(error.message);
-          console.log(error);
-        })
-        .finally(() => {
-          setIsLoading(false);
-        });
-    };
+        alert("Login Successfull");
+        const destination = location?.state?.from || "/";
+        history.push(destination);
+      })
+      .catch((error) => {
+        setAuthError(error.message);
+        console.log(error);
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
+  };
 
   useEffect(() => {
-    fetch(`http://localhost:8000/users/${user.email}`)
+    fetch(`https://intense-gorge-71583.herokuapp.com/users/${user.email}`)
       .then((res) => res.json())
       .then((data) => {
         if (data.admin) {
@@ -138,10 +137,10 @@ const useFirebase = () => {
       .then(() => {})
       .catch((error) => {});
   };
-  
+
   const saveUser = (email, displayName, method) => {
     const user = { email, displayName };
-    fetch("http://localhost:8000/users", {
+    fetch("https://intense-gorge-71583.herokuapp.com/users", {
       method: method,
       headers: {
         "content-type": "application/json",

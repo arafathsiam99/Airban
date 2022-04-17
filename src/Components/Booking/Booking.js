@@ -4,36 +4,36 @@ import { useParams } from "react-router-dom";
 import useFirebase from "../Hooks/useFirebase";
 
 const Booking = () => {
-    const { user } = useFirebase();
-    const { id } = useParams();
-    const [item, setItem] = useState({});
+  const { user } = useFirebase();
+  const { id } = useParams();
+  const [item, setItem] = useState({});
 
-    const {
-      register,
-      handleSubmit,
-      formState: { errors },
-    } = useForm();
-    const onSubmit = (data) => {
-      data.packageName = item?.name;
-      data.packageImg = item?.img;
-      data.status = "Pending";
-      console.log(item?.name);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => {
+    data.packageName = item?.name;
+    data.packageImg = item?.img;
+    data.status = "Pending";
+    console.log(item?.name);
 
-      fetch("http://localhost:8000/placeorders", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify(data),
-      })
-        .then((res) => res.json())
-        .then((result) => console.log(result));
-    };
+    fetch("https://intense-gorge-71583.herokuapp.com/placeorders", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((result) => console.log(result));
+  };
 
-    useEffect(() => {
-      fetch(`http://localhost:8000/placebooking/${id}`)
-        .then((res) => res.json())
-        .then((data) => setItem(data));
-    }, []);
-    console.log(item);
+  useEffect(() => {
+    fetch(`https://intense-gorge-71583.herokuapp.com/placebooking/${id}`)
+      .then((res) => res.json())
+      .then((data) => setItem(data));
+  }, []);
+  console.log(item);
   return (
     <div className="container mx-auto">
       <h1 className="text-3xl text-center  font-semibold text-blue-800 my-8">

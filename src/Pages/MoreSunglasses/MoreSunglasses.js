@@ -5,14 +5,14 @@ const MoreSunglasses = () => {
   const [allSunglasses, setAllSunglasses] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/allsunglasses")
+    fetch("https://intense-gorge-71583.herokuapp.com/allsunglasses")
       .then((res) => res.json())
       .then((data) => setAllSunglasses(data));
   }, []);
   return (
     <>
       <p className="text-center text-2xl text-orange-500 font-semibold">
-       More Collection
+        More Collection
       </p>
       <h1 className="text-center text-3xl text-blue-800 font-bold">
         Best Eyewear Collection

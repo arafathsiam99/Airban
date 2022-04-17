@@ -1,49 +1,49 @@
 import React, { useEffect, useState } from "react";
 
 const ManageAllOrders = () => {
-    const [allProducts, setAllProdcuts] = useState([]);
-    const [isDeleted, setIsDeleted] = useState(false);
+  const [allProducts, setAllProdcuts] = useState([]);
+  const [isDeleted, setIsDeleted] = useState(false);
 
-    useEffect(() => {
-      fetch("http://localhost:8000/allproducts")
+  useEffect(() => {
+    fetch("https://intense-gorge-71583.herokuapp.com/allproducts")
+      .then((res) => res.json())
+      .then((data) => setAllProdcuts(data));
+  }, [isDeleted]);
+
+  const handleDeleteProdcuts = (id) => {
+    const confirm = window.confirm("Are you want to delete this products?");
+    console.log(id);
+    if (confirm) {
+      fetch(`https://intense-gorge-71583.herokuapp.com/deleteOrders/${id}`, {
+        method: "DELETE",
+        headers: { "content-type": "application/json" },
+      })
         .then((res) => res.json())
-        .then((data) => setAllProdcuts(data));
-    }, [isDeleted]);
-
-     const handleDeleteProdcuts = (id) => {
-       const confirm = window.confirm("Are you want to delete this products?");
-       console.log(id);
-       if (confirm) {
-         fetch(`http://localhost:8000/deleteOrders/${id}`, {
-           method: "DELETE",
-           headers: { "content-type": "application/json" },
-         })
-           .then((res) => res.json())
-           .then((result) => {
-             if (result.deletedCount) {
-               setIsDeleted(!isDeleted);
-             } else {
-               setIsDeleted(false);
-             }
-           });
-       }
-     };
-     const handleConfirm = (id) => {
-       fetch(`http://localhost:8000/confirmOrders/${id}`, {
-         method: "PUT",
-         headers: { "content-type": "application/json" },
-       })
-         .then((res) => res.json())
-         .then((result) => {
-           if (result.modifiedCount) {
-             setIsDeleted(!isDeleted);
-             alert("confirmed success");
-           } else {
-             setIsDeleted(false);
-           }
-         });
-     };
-     console.log(allProducts);
+        .then((result) => {
+          if (result.deletedCount) {
+            setIsDeleted(!isDeleted);
+          } else {
+            setIsDeleted(false);
+          }
+        });
+    }
+  };
+  const handleConfirm = (id) => {
+    fetch(`https://intense-gorge-71583.herokuapp.com/confirmOrders/${id}`, {
+      method: "PUT",
+      headers: { "content-type": "application/json" },
+    })
+      .then((res) => res.json())
+      .then((result) => {
+        if (result.modifiedCount) {
+          setIsDeleted(!isDeleted);
+          alert("confirmed success");
+        } else {
+          setIsDeleted(false);
+        }
+      });
+  };
+  console.log(allProducts);
   return (
     <div className="container py-8 mx-auto">
       <h2 className="text-center text-3xl text-blue-800 font-semibold my-4">
@@ -79,7 +79,7 @@ const ManageAllOrders = () => {
         </div>
       </div>
     </div>
-  );;
+  );
 };
 
 export default ManageAllOrders;
