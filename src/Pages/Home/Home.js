@@ -4,6 +4,7 @@ import News from "../../Components/News/News";
 import Products from "../../Components/Products/Products";
 import Stats from "../../Components/Stats/Stats";
 import Testimonials from "../../Components/Testimonials/Testimonials";
+import Review from "../Review/Review";
 
 const Home = () => {
   return (
@@ -127,6 +128,7 @@ const Home = () => {
       </header>
       <Products></Products>
       <Testimonials></Testimonials>
+      <Review></Review>
       <Instagram></Instagram>
       <News></News>
       <Stats></Stats>

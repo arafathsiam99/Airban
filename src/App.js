@@ -21,6 +21,7 @@ import Footer from "./Pages/Footer/Footer";
 import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
 import ManageAllOrders from "./Pages/ManageAllOrders/ManageAllOrders";
+import MoreSunglasses from "./Pages/MoreSunglasses/MoreSunglasses";
 import MyOrders from "./Pages/MyOrders/MyOrders";
 import Register from "./Pages/Register/Register";
 import Review from "./Pages/Review/Review";
@@ -93,6 +94,9 @@ function App() {
           </Route>
           <Route exact path="/manageallorders">
             <ManageAllOrders></ManageAllOrders>
+          </Route>
+          <Route exact path="/moresunglasses">
+            <MoreSunglasses></MoreSunglasses>
           </Route>
         </Switch>
         <Footer></Footer>

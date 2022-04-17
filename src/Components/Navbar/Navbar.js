@@ -21,6 +21,7 @@ const Navbar = () => {
     { name: "Blog", to: "/blog" },
     { name: "Contact", to: "/contact" },
     { name: "Dashboard", to: "/dashboard" },
+    { name: "More Sunglasses", to: "/moresunglasses" },
     { name: "Add Review", to: "/addreview" },
   ];
 
@@ -69,6 +70,9 @@ const Navbar = () => {
                   Dashboard
                 </NavLink>
               )}
+              <NavLink className="custom-link" to="/moresunglasses">
+                More Sunglasses
+              </NavLink>
 
               {/* <NavLink
                 className={(info) =>
@@ -81,7 +85,6 @@ const Navbar = () => {
                 <h1>Add New Product</h1>
               </NavLink> */}
 
-
               {/* <NavLink
                 className={(info) =>
                   info.isActive
@@ -93,7 +96,6 @@ const Navbar = () => {
                 <h1>My Orders</h1>
               </NavLink> */}
 
-
               {/* <NavLink
                 className={(info) =>
                   info.isActive
@@ -104,7 +106,6 @@ const Navbar = () => {
               >
                 <h1>Manage All Orders</h1>
               </NavLink> */}
-
 
               <NavLink
                 className={(info) =>
@@ -226,6 +227,9 @@ const Navbar = () => {
                 to="/dashboard"
               >
                 <h1>Dashboard</h1>
+              </NavLink>
+              <NavLink className="custom-link" to="/moresunglasses">
+                More Sunglasses
               </NavLink>
               <NavLink
                 className={(info) =>
